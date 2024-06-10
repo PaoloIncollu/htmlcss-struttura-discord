@@ -8,16 +8,41 @@
 
 /*General*/
 
+.pink{
 
+    background-color: #FFC0CB;
+
+}
+
+.light-blue{
+
+    background-color: #1E90FF;
+}
+
+.bg-grey{
+
+    background-color:#D3D3D3 ;
+    
+
+}
+
+.bg-green{
+
+    background-color: #228B22;
+
+}
+
+.bg-darkgrey{
+
+    background-color: #23272A;
+}
 
 /*Header*/
 
 .header-container{
 
-    display:flex;
-    max-width: 100%;
-    background-color: red;
-    height: 500px;
+    display: flex;
+    min-width: 500px;
     flex-direction: column;
 }
 
@@ -28,30 +53,13 @@
     width: 100%;
     flex-direction: column;
     min-height: 20%;
-    align-items: space-between;
-
-}
-
-.header-bottom{
-
-    background-color: #00008B;
-    width: 100%;
-    display: flex;
-    min-height: 80%;
     
 
 }
 
-.navigation{
-
-    display: flex;
-    justify-content: space-between;
-
-}
 
 .navigation > ul {
 
-   
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -65,34 +73,29 @@
 
 }
 
-.navigation > ul li{
+.navigation > ul > li{
     
-    display: flex;
+    
     border: 3px dashed black; 
     background-color: #DAA520;
     width: 100%;
     padding: 10px 0;
     
     
-    
-    
-    
-    
 }
 
 
-.content-25{
+
+.header-bottom{
+    
     display: flex;
-    flex-grow: 25%;
-
-
-}
-
-.content-50{
-    display: flex;
-    flex-grow: 50%;
+    background-color: #00008B;
+    width: 100%;
+    min-height: 200px;
     
+
 }
+
 
 .fuchsia{
 
@@ -101,8 +104,64 @@
     margin: 30px auto;
     border: 3px dashed black;
 }
+
+
 /*Main*/
 
+.section-container{
 
+    display: flex;
+    width: 70%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+
+.section-container .content{
+
+    width: 60%;
+    min-height: 200px;
+    border: 3px dashed black;
+
+}
+
+.section-container .adv{
+
+    width: 40%;
+    height: 200px;
+    border: 3px dashed black;
+
+}
+
+.reverse .adv {
+    
+    order: -1;
+
+}
+
+
+.section-container .bg-green{
+
+    width: 100%;
+    min-height: 400px;
+    border: 3px dashed black;
+
+}
+
+.container-footer{
+
+    display: flex;
+    width: 70%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ADD8E6;
+    min-height: 400px;
+}
 
 /*Footer*/
