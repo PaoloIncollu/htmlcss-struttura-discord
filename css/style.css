@@ -8,13 +8,13 @@
 
 /*General*/
 
-.pink{
+.bg-pink{
 
     background-color: #FFC0CB;
 
 }
 
-.light-blue{
+.bg-light-blue{
 
     background-color: #1E90FF;
 }
@@ -37,51 +37,85 @@
     background-color: #23272A;
 }
 
+.bg-aqua{
+
+    background-color: aqua;
+}
+
+.bg-coral{
+
+    background-color: coral;
+
+}
+
 /*Header*/
 
 .header-container{
 
     display: flex;
-    min-width: 500px;
+    
     flex-direction: column;
+    
+    
 }
 
 .header-top{
-
-    background-color: #ADD8E6;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    min-height: 20%;
     
-
+    display: flex;
+    background-color: #ADD8E6;
+    max-width: 100%;
+   
 }
 
 
-.navigation > ul {
+.header-top > ul {
 
     display: flex;
-    flex-direction: row;
     list-style: none;
     width: 70%;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+    justify-content: space-between;
+    
     
     
 
 }
 
-.navigation > ul > li{
+.header-top > ul > li{
     
-    
+   
     border: 3px dashed black; 
     background-color: #DAA520;
-    width: 100%;
     padding: 10px 0;
     
     
+
+
+}
+
+.content-25.logo{
+
+    min-width: 25%;
+    padding-left: 10px;
+    
+    
+}
+
+
+.content-25.login{
+
+    min-width: 25%;
+    text-align: end;
+    padding-right: 10px;
+}
+
+.content-50{
+
+    min-width: 50%;
+    text-align: center;
 }
 
 
@@ -152,16 +186,75 @@
 
 }
 
+
+/*Footer*/
+
 .container-footer{
 
     display: flex;
     width: 70%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    background-color: #ADD8E6;
-    min-height: 400px;
+    flex-direction: column;
 }
 
-/*Footer*/
+.footer-top{
+
+    display: flex;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 20px;
+
+}
+
+.footer-top .right{
+
+    width: 35%;
+    min-height: 250px;
+    border: 2px dashed black;
+}
+
+.footer-top .left{
+
+    display: flex;
+    width: 65%;
+    min-height: 250px;
+    border: 2px dashed black;
+    flex-direction: row;
+
+}
+
+.left .left-section{
+
+    
+    width: 25%;
+    min-height: 250px ;
+    border: 1px dashed white;
+
+}
+
+.footer-bottom{
+
+    display: flex;
+    background-color: #7FFFD4;
+    width: 100%;
+    min-height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom .right, 
+.footer-bottom .left{
+
+    width: auto;
+    height: 25px;
+    border: 1px dashed black;
+    text-align: center;
+    line-height: 25px;
+    vertical-align: center;
+    padding: 0 10px;
+    
+}
+
