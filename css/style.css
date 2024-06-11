@@ -50,75 +50,79 @@
 
 /*Header*/
 
-.header-container{
 
-    display: flex;
-    
-    flex-direction: column;
-    
-    
-}
 
 .header-top{
     
-    display: flex;
+    
     background-color: #ADD8E6;
-    max-width: 100%;
+    width: 100%;
    
 }
 
 
-.header-top > ul {
+.header-top .container {
 
     display: flex;
     list-style: none;
     width: 70%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding: 20px;
     margin-left: auto;
     margin-right: auto;
-    justify-content: space-between;
     
     
     
-
 }
 
-.header-top > ul > li{
+.header-top .container > * {
     
    
     border: 3px dashed black; 
     background-color: #DAA520;
     padding: 10px 0;
     
-    
-
-
 }
+
 
 .content-25.logo{
 
-    min-width: 25%;
-    padding-left: 10px;
-    
+    width: 25%;
+    padding-left: 10px;;
     
 }
 
-
 .content-25.login{
 
-    min-width: 25%;
-    text-align: end;
-    padding-right: 10px;
+    width: 25%;
+    padding-right: 10px;;
+    text-align: right;
 }
 
 .content-50{
 
-    min-width: 50%;
+    width: 50%;
     text-align: center;
+
 }
 
+.content-50 nav  ul li {
 
+    list-style: none;
+
+}
+
+.content-50 nav ul {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.content-50 nav ul li > a {
+ 
+    display: inline-block;
+    padding: 0 10px;
+}
 
 .header-bottom{
     
@@ -166,7 +170,7 @@
 .section-container .adv{
 
     width: 40%;
-    height: 200px;
+    min-height: 200px;
     border: 3px dashed black;
 
 }
@@ -211,8 +215,8 @@
 
 .footer-top .right{
 
-    width: 35%;
-    min-height: 250px;
+    width: 30%;
+    height: 250px;
     border: 2px dashed black;
 }
 
@@ -220,7 +224,7 @@
 
     display: flex;
     width: 65%;
-    min-height: 250px;
+    height: 250px;
     border: 2px dashed black;
     flex-direction: row;
 
@@ -230,7 +234,7 @@
 
     
     width: 25%;
-    min-height: 250px ;
+    height: 250px ;
     border: 1px dashed white;
 
 }
@@ -240,7 +244,7 @@
     display: flex;
     background-color: #7FFFD4;
     width: 100%;
-    min-height: 50px;
+    height: 50px;
     justify-content: space-between;
     align-items: center;
 }
