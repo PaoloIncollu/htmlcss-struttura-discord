@@ -223,7 +223,7 @@
 .footer-top .left{
 
     display: flex;
-    width: 65%;
+    width: 70%;
     height: 250px;
     border: 2px dashed black;
     flex-direction: row;
